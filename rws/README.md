@@ -73,9 +73,9 @@ fmt.Println("Auto Selected:", autoSelectedItem)
 ## 📊 Mathematical Formula
 
 ### **Given:**
-- A set of items: $ S = \{s_1, s_2, ..., s_n\} $
-- A corresponding weight for each item: $ W = \{w_1, w_2, ..., w_n\} $
-- The total sum of weights: $ W_{\text{sum}} = \sum_{i=1}^{n} w_i $
+- A set of items: $S = \{s_1, s_2, ..., s_n\}$
+- A corresponding weight for each item: $W = \{w_1, w_2, ..., w_n\}$
+- The total sum of weights: $W_{\text{sum}} = \sum_{i=1}^{n} w_i$
 - A random number $R$ sampled from **$[0, W_{\text{sum}})$**
 
 ---
@@ -83,8 +83,8 @@ fmt.Println("Auto Selected:", autoSelectedItem)
 ## 🎯 Selection Process
 
 1. Generate a random number $R$ uniformly from **$[0, W_{\text{sum}})$**.
-2. Iterate through the items, keeping a cumulative sum: $C_j = \sum_{i=1}^{j} w_i $
-3. Select the first item $s_j$ where: $ C_j > R $
+2. Iterate through the items, keeping a cumulative sum: $C_j = \sum_{i=1}^{j} w_i$
+3. Select the first item $s_j$ where: $C_j > R$
 
 ---
 
