@@ -70,28 +70,28 @@ autoSelectedItem, _ := autoSelector.Pick()
 fmt.Println("Auto Selected:", autoSelectedItem)
 ```
 
-## 📊 Algorithm Breakdown
+## 📊 Mathematical Formula
 
-### **Mathematical Formula**
-Given:
-- A set of items: \( S = \{s_1, s_2, ..., s_n\} \)
-- A corresponding weight for each item: \( W = \{w_1, w_2, ..., w_n\} \)
+### **Given:**
+- A set of items:  
+  $$ S = \{s_1, s_2, ..., s_n\} $$
+- A corresponding weight for each item:  
+  $$ W = \{w_1, w_2, ..., w_n\} $$
 - The total sum of weights:  
-  \[
-  W_{\text{sum}} = \sum_{i=1}^{n} w_i
-  \]
-- A random number \( R \) sampled from \( [0, W_{\text{sum}}) \)
+  $$ W_{\text{sum}} = \sum_{i=1}^{n} w_i $$
+- A random number $R$ sampled from **$[0, W_{\text{sum}})$**
 
-### **Selection Process**
-1. Generate a random number \( R \) uniformly from \( [0, W_{\text{sum}}) \).
+---
+
+## 🎯 Selection Process
+
+1. Generate a random number $R$ uniformly from **$[0, W_{\text{sum}})$**.
 2. Iterate through the items, keeping a cumulative sum:
-   \[
-   C_j = \sum_{i=1}^{j} w_i
-   \]
-3. Select the first item \( s_j \) where:
-   \[
-   C_j > R
-   \]
+   $$ C_j = \sum_{i=1}^{j} w_i $$
+3. Select the first item $s_j$ where:
+   $$ C_j > R $$
+
+---
 
 ## 🏎️ **Performance Optimization**
 - **Initial Approach (O(n))**:  
@@ -106,27 +106,21 @@ Given:
 
 ## 🏆 **Example Calculation**
 ### **Given items and weights:**
-\[
-\text{Items} = [A, B, C]
-\]
-\[
-\text{Weights} = [3, 1, 6]
-\]
+$$ \text{Items} = [A, B, C] $$
+$$ \text{Weights} = [3, 1, 6] $$
 
 1. Compute total weight:
-   \[
-   W_{\text{sum}} = 3 + 1 + 6 = 10
-   \]
+   $$ W_{\text{sum}} = 3 + 1 + 6 = 10 $$
 
 2. Compute cumulative weights:
-   - \( C_1 = 3 \) (for A)
-   - \( C_2 = 3 + 1 = 4 \) (for B)
-   - \( C_3 = 3 + 1 + 6 = 10 \) (for C)
+   - $C_1 = 3$ (for A)
+   - $C_2 = 3 + 1 = 4$ (for B)
+   - $C_3 = 3 + 1 + 6 = 10$ (for C)
 
-3. Generate a random number \( R \in [0, 10) \):
-   - If \( 0 \leq R < 3 \) → Select **A**
-   - If \( 3 \leq R < 4 \) → Select **B**
-   - If \( 4 \leq R < 10 \) → Select **C**
+3. Generate a random number $R \in [0, 10)$:
+   - If $0 \leq R < 3$ → Select **A**
+   - If $3 \leq R < 4$ → Select **B**
+   - If $4 \leq R < 10$ → Select **C**
 
 
 ## 📝 **License**
