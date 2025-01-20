@@ -1,0 +1,41 @@
+name: Request a New Algorithm
+description: Suggest a new algorithm for inclusion in the package.
+title: "Request New Algorithm: [Algorithm Name]"
+labels: ["algorithm"]
+assignees:
+  - ja7ad
+body:
+  - type: markdown
+    attributes:
+      value: |
+        🚀 **Request a New Algorithm**  
+        Please fill out this form with details about the new algorithm you would like to propose.
+
+  - type: input
+    id: why
+    attributes:
+      label: 📌 Why is this algorithm important?
+      description: Why do you think this algorithm should be added?
+      placeholder: ex. A memory-efficient way to count the frequency of items in a stream.
+    validations:
+      required: true
+
+  - type: textarea
+    id: usecase
+    attributes:
+      label: 🌐 Use Cases
+      description: List the real-world applications of this algorithm (one per line).
+      placeholder: |
+        - Load balancing in distributed systems
+        - Optimized search for large-scale data
+        - Real-time fraud detection in transactions
+    validations:
+      required: true
+
+  - type: textarea
+    id: example
+    attributes:
+      label: ✉️ Example Usage
+      description: Provide an example of how this algorithm is used.
+    validations:
+      required: true
