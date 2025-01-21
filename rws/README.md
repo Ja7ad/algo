@@ -104,8 +104,7 @@ fmt.Println("Auto Selected:", autoSelectedItem)
 $$ \text{Items} = [A, B, C] $$
 $$ \text{Weights} = [3, 1, 6] $$
 
-1. Compute total weight:
-   $$ W_{\text{sum}} = 3 + 1 + 6 = 10 $$
+1. Compute total weight: $W_{\text{sum}} = 3 + 1 + 6 = 10$
 
 2. Compute cumulative weights:
    - $C_1 = 3$ (for A)
