@@ -1,4 +1,4 @@
-# algo: A Collection of High-Performance Algorithms in Golang
+# algo: A Collection of High-Performance Algorithms
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/Ja7ad/algo.svg)](https://pkg.go.dev/github.com/Ja7ad/algo)
 [![codecov](https://codecov.io/gh/Ja7ad/algo/graph/badge.svg?token=9fLKrkUviU)](https://codecov.io/gh/Ja7ad/algo)
