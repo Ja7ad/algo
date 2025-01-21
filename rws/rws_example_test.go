@@ -1,29 +1,30 @@
-package main
+package rws
 
 import (
 	"fmt"
-	"github.com/Ja7ad/algo/rws"
 	"log"
 )
 
-func main() {
+func ExampleNewWeightedSelector() {
 	weightedItems := map[int]string{
 		3: "Apple",
 		1: "Banana",
 		6: "Cherry",
 	}
 
-	selector, err := rws.NewWeightedSelector(weightedItems)
+	selector, err := NewWeightedSelector(weightedItems)
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	selectedItem, _ := selector.Pick()
 	fmt.Println("Selected:", selectedItem)
+}
 
+func ExampleNewAutoWeightedSelector() {
 	items := []string{"Dog", "Cat", "Fish"}
 
-	autoSelector, err := rws.NewAutoWeightedSelector(items)
+	autoSelector, err := NewAutoWeightedSelector(items)
 	if err != nil {
 		log.Fatal(err)
 	}
