@@ -17,10 +17,13 @@ been validated in terms of functionality and testing.
 
 ## 📚 Available Algorithms
 
-| Algorithm | Description |
-|-----------|-------------|
-| [Random Weighted Selection](./rws/README.md) | Selects items randomly based on assigned weights. Useful in load balancing, gaming, and AI. |
-
+| Algorithm                                        | Description |
+|--------------------------------------------------|-------------|
+| [Random Weighted Selection](./rws/README.md)     | Selects items randomly based on assigned weights. Useful in load balancing, gaming, and AI. |
+| [Reservoir Sampling Algorithm R](./rs/README.md) | Basic reservoir sampling, replaces elements with probability `k/i`. Efficient for uniform random sampling. |
+| [Reservoir Sampling Algorithm L](./rs/README.md) | Optimized reservoir sampling for large `N`, reduces unnecessary replacements using skipping. |
+| [Weighted Reservoir Sampling](./rs/README.md)    | Selects items with probability proportional to their weights using a heap-based approach. Used in recommendation systems and A/B testing. |
+| [Random Sort Reservoir Sampling](./rs/README.md) | Uses a min-heap and random priorities to maintain the top `k` elements in a streaming dataset. |
 
 ## 🚀 Installation >= go 1.19
 
