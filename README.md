@@ -1,4 +1,8 @@
-# 🚀 algo: A Collection of High-Performance Algorithms in Golang
+# algo: A Collection of High-Performance Algorithms in Golang
+
+[![Go Reference](https://pkg.go.dev/badge/github.com/Ja7ad/algo.svg)](https://pkg.go.dev/github.com/Ja7ad/algo)
+[![codecov](https://codecov.io/gh/Ja7ad/algo/graph/badge.svg?token=9fLKrkUviU)](https://codecov.io/gh/Ja7ad/algo)
+[![Go Report Card](https://goreportcard.com/badge/github.com/Ja7ad/algo)](https://goreportcard.com/report/github.com/Ja7ad/algo)
 
 **`algo`** is a Golang library featuring a variety of **efficient** and **well-optimized** algorithms designed for diverse **problem-solving needs**. 
 
@@ -16,7 +20,13 @@
 | [Random Weighted Selection](./rws/README.md) | Selects items randomly based on assigned weights. Useful in load balancing, gaming, and AI. |
 
 
-## 🚀 Usage Example
+## 🚀 Installation >= go 1.19
+
+```shell
+go get -u github.com/Ja7ad/algo
+```
+
+## ✅ Usage Example
 
 Here’s how you can use the **Random Weighted Selection** algorithm:
 
