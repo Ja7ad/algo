@@ -4,6 +4,9 @@ title: "Request New Algorithm: [Algorithm Name]"
 labels: ["algorithm"]
 assignees:
   - ja7ad
+labels:
+  - Algorithm
+  - good first issue
 body:
   - type: markdown
     attributes:
